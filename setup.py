@@ -6,21 +6,17 @@
 # option. This file may not be copied, modified, or distributed
 # except according to those terms.
 
-from distutils.core import setup
-from setuptools import find_packages
+from setuptools import setup, find_packages
 
 with open("requirements.txt") as f:
     requirements = f.readlines()
 
 setup(
-    # package_dir={"": "src"},
-    # name="Distutils",
-    # version="1.0",
-    # description="Python Distribution Utilities",
-    # author="Greg Ward",
-    # author_email="gward@python.net",
-    # url="https://www.python.org/sigs/distutils-sig/",
-    # packages=["distutils", "distutils.command"],
+    name="My app",
+    version="1.0",
+    description="Python Apache Beam pipeline.",
+    author="My name",
+    author_email="my@email.com",
+    packages=find_packages(),
     install_requires=requirements,
-    package_dir={"": "src"},
 )

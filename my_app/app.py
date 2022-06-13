@@ -25,21 +25,3 @@ def run(
 
         # Used for testing only.
         test(elements)
-
-
-if __name__ == "__main__":
-    import argparse
-
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--input-text",
-        default="Default input text",
-        help="Input text to print.",
-    )
-    args, beam_args = parser.parse_known_args()
-
-    beam_options = PipelineOptions(save_main_session=True)
-    run(
-        input_text=args.input_text,
-        beam_options=beam_options,
-    )

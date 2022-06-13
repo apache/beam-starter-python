@@ -40,13 +40,10 @@ Running your pipeline in Python is as easy as running the script file directly.
 
 ```sh
 # You can run the script file directly.
-python src/my_app.py
-
-# Or you can run it as a module if you installed it as a local package.
-python -m my_app
+python main.py
 
 # To run passing command line arguments.
-python -m my_app.py --input-text="🎉"
+python main.py --input-text="🎉"
 
 # To run the tests.
 python -m unittest -v
