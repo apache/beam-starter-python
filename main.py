@@ -25,7 +25,7 @@ if __name__ == "__main__":
     )
     args, beam_args = parser.parse_known_args()
 
-    beam_options = PipelineOptions(save_main_session=True)
+    beam_options = PipelineOptions(save_main_session=True, setup_file="./setup.py")
     app.run(
         input_text=args.input_text,
         beam_options=beam_options,
