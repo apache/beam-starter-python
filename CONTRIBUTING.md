@@ -6,7 +6,7 @@ There are many ways to contribute, here are some.
 
 ## Filing an issue
 
-If there's any issue you encounter or anything that needs to be fixed, feel free to [create JIRA issue](https://issues.apache.org/jira/secure/CreateIssue!default.jspa).
+If there's any issue you encounter or anything that needs to be fixed, feel free to [create a GitHub issue](https://github.com/apache/beam-starter-python/issues).
 
 ## Contributing to this starter project
 
