@@ -22,7 +22,7 @@ source env/bin/activate
 While activated, your `python` and `pip` commands will point to the virtual environment,
 so any changes or install dependencies are self-contained.
 
-As a one time setup, let's install the project's dependencies from the [`requirements.tx`](requirements.txt) file.
+As a one time setup, let's install the project's dependencies from the [`requirements.txt`](requirements.txt) file.
 
 ```py
 # It's always a good idea to update pip before installing dependencies.
