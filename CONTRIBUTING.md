@@ -65,5 +65,5 @@ page in the GitHub docs.
 ## Contributing to Apache Beam
 
 For information on how to contribute to
-[Apache Beam](https://github.com/apache/beam), see to the
+[Apache Beam](https://github.com/apache/beam), see the
 [Contribution guide](https://beam.apache.org/contribute/).
