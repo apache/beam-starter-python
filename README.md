@@ -6,8 +6,8 @@ you can choose the license you prefer and feel free to delete anything related t
 ## Before you begin
 
 Make sure you have a [Python 3](https://www.python.org/) development environment ready.
-If you don't, you can follow the instructions in the
-[Python 3 Installation & Setup Guide](https://realpython.com/installing-python/).
+If you don't, you can download and install it from the
+[Python downloads page](https://www.python.org/downloads/).
 
 We recommend using a virtual environment to isolate your project's dependencies.
 
