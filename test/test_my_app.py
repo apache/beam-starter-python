@@ -19,6 +19,7 @@ import my_app
 
 
 @patch("apache_beam.Pipeline", TestPipeline)
+@patch("builtins.print", lambda x: x)
 class TestApp(unittest.TestCase):
     def test_run_direct_runner(self):
         # Note that the order of the elements doesn't matter.
