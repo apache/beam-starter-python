@@ -20,7 +20,7 @@ def run(
         elements = (
             pipeline
             | "Create elements" >> beam.Create(["Hello", "World!", input_text])
-            | "Print elements" >> beam.Map(lambda x: print(x) or x)
+            | "Print elements" >> beam.Map(print)
         )
 
         # Used for testing only.
