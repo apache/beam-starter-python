@@ -8,14 +8,15 @@
 
 from setuptools import setup, find_packages
 
-with open("requirements.txt") as f:
-    requirements = f.readlines()
+requirements = [
+    "apache-beam[gcp]==2.42.0", "transformers==4.21.0", "torch==1.13.0", "torchvision==0.14.0"
+]
 
 setup(
     name="My app",
     version="1.0",
     description="Python Apache Beam pipeline.",
-    author="My name",
+    author="Danny McCormick",
     author_email="my@email.com",
     packages=find_packages(),
     install_requires=requirements,

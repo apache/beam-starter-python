@@ -18,15 +18,35 @@ if __name__ == "__main__":
     logging.getLogger().setLevel(logging.INFO)
 
     parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--input-text",
-        default="Default input text",
-        help="Input text to print.",
-    )
     args, beam_args = parser.parse_known_args()
+
+    example_images = ['https://storage.googleapis.com/apache-beam-samples/image_captioning/bear.jpeg',
+              'https://storage.googleapis.com/apache-beam-samples/image_captioning/bear.jpeg',
+              'https://storage.googleapis.com/apache-beam-samples/image_captioning/bear.jpeg',
+              'https://storage.googleapis.com/apache-beam-samples/image_captioning/bee.jpeg',
+              'https://storage.googleapis.com/apache-beam-samples/image_captioning/bee.jpeg',
+              'https://storage.googleapis.com/apache-beam-samples/image_captioning/fox.jpeg',
+              'https://storage.googleapis.com/apache-beam-samples/image_captioning/fox.jpeg',
+              'https://storage.googleapis.com/apache-beam-samples/image_captioning/German-Shepherd.jpeg',
+              'https://storage.googleapis.com/apache-beam-samples/image_captioning/German-Shepherd.jpeg',
+              'https://storage.googleapis.com/apache-beam-samples/image_captioning/German-Shepherd.jpeg',
+              'https://storage.googleapis.com/apache-beam-samples/image_captioning/German-Shepherd.jpeg',
+              'https://storage.googleapis.com/apache-beam-samples/image_captioning/German-Shepherd.jpeg',
+              'https://storage.googleapis.com/apache-beam-samples/image_captioning/German-Shepherd.jpeg',
+              'https://storage.googleapis.com/apache-beam-samples/image_captioning/German-Shepherd.jpeg',
+              'https://storage.googleapis.com/apache-beam-samples/image_captioning/ladybug.jpeg',
+              'https://storage.googleapis.com/apache-beam-samples/image_captioning/ladybug.jpeg',
+              'https://storage.googleapis.com/apache-beam-samples/image_captioning/ladybug.jpeg',
+              'https://storage.googleapis.com/apache-beam-samples/image_captioning/starfish.jpeg',
+              'https://storage.googleapis.com/apache-beam-samples/image_captioning/tiger.jpeg',
+              'https://storage.googleapis.com/apache-beam-samples/image_captioning/tiger.jpeg',
+              'https://storage.googleapis.com/apache-beam-samples/image_captioning/tiger.jpeg',
+              'https://storage.googleapis.com/apache-beam-samples/image_captioning/tiger.jpeg',
+              'https://storage.googleapis.com/apache-beam-samples/image_captioning/zebra.jpeg'
+              'https://storage.googleapis.com/apache-beam-samples/image_captioning/zebra.jpeg']* 333
 
     beam_options = PipelineOptions(save_main_session=True, setup_file="./setup.py")
     app.run(
-        input_text=args.input_text,
         beam_options=beam_options,
+        example_images=example_images,
     )
