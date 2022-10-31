@@ -6,17 +6,14 @@
 # option. This file may not be copied, modified, or distributed
 # except according to those terms.
 
-from setuptools import setup, find_packages
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
 
-with open("requirements.txt") as f:
-    requirements = f.readlines()
-
-setup(
-    name="My app",
-    version="1.0",
-    description="Python Apache Beam pipeline.",
-    author="My name",
-    author_email="my@email.com",
-    packages=find_packages(),
-    install_requires=requirements,
-)
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
