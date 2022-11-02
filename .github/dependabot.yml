@@ -12,8 +12,22 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    reviewers:
+      - AnandInguva
+      - TheNeuralBit
+      - ryanthompson591
+      - tvalentyn
+      - pabloem
+      - y1chi
 
-  - package-ecosystem: "github-actions"
+- package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
+    reviewers:
+      - AnandInguva
+      - TheNeuralBit
+      - ryanthompson591
+      - tvalentyn
+      - pabloem
+      - y1chi
