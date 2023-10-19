@@ -14,11 +14,10 @@ updates:
       interval: "daily"
     reviewers:
       - AnandInguva
-      - TheNeuralBit
-      - ryanthompson591
+      - damccorm
+      - jrmccluskey
       - tvalentyn
-      - pabloem
-      - y1chi
+      - riteshghorse
 
   - package-ecosystem: "github-actions"
     directory: "/"
@@ -26,8 +25,7 @@ updates:
       interval: "daily"
     reviewers:
       - AnandInguva
-      - TheNeuralBit
-      - ryanthompson591
+      - damccorm
+      - jrmccluskey
       - tvalentyn
-      - pabloem
-      - y1chi
+      - riteshghorse
