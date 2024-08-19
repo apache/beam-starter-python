@@ -1,1 +1,1 @@
-apache-beam==2.58.0
+apache-beam==2.58.1
