@@ -1,7 +1,7 @@
 # Apache Beam starter for Python
-
-If you want to clone this repository to start your own project,
+The intent of this repo is to provide a very simple project structure so user can have a jump start. If you want to clone this repository to start your own project,
 you can choose the license you prefer and feel free to delete anything related to the license you are dropping.
+[Check here](https://github.com/apache/beam/tree/master/sdks/python/apache_beam/examples) in case you are looking for example code and check [DataFlow cookbook](https://github.com/GoogleCloudPlatform/dataflow-cookbook) for more examples.
 
 ## Before you begin
 
