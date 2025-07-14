@@ -18,6 +18,6 @@ setup(
     author="My name",
     author_email="my@email.com",
     packages=find_packages(),
-    install_requires=requirements,
+    install_requires=requirements + ["setuptools>=80.9.0"],
     python_requires=">=3.8",
 )
