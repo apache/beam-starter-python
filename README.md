@@ -24,7 +24,7 @@ so any changes or install dependencies are self-contained.
 
 As a one time setup, let's install the project's dependencies from the [`requirements.txt`](requirements.txt) file.
 
-```py
+```sh
 # It's always a good idea to update pip before installing dependencies.
 pip install -U pip
 

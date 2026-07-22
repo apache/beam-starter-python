@@ -9,14 +9,15 @@
 from setuptools import setup, find_packages
 
 with open("requirements.txt") as f:
-    requirements = f.readlines()
+    requirements = [line.strip() for line in f.readlines() if line.strip() and not line.startswith('#')]
 
 setup(
-    name="My app",
-    version="1.0",
+    name="my-app",
+    version="1.0.0",
     description="Python Apache Beam pipeline.",
     author="My name",
     author_email="my@email.com",
     packages=find_packages(),
-    install_requires=requirements,
+    install_requires=requirements + ["setuptools>=80.9.0"],
+    python_requires=">=3.8",
 )
